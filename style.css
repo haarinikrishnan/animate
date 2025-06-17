@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px 20px;
+    animation: header 2s ease-in-out;
+}
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600px;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.content{
+    width:50% ;
+    margin-top:5%;
+    margin-left: 5%;
+    color:white;
+    overflow: hidden;
+     animation: content 2s ease-in-out;
+
+}
+@keyframes content{
+    0%{
+        
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+.content h1{
+    font-size: 80px;
+    margin-bottom: 2%;
+    letter-spacing: 8px;
+    
+}
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+span{
+    color:blue;
+}
+.content p{
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    padding:15px 30px;
+    background: transparent;
+    color:white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+button:hover{
+    background: yellowgreen;
+
+}
+.image{
+    width: 50px;
+    margin-top: 5%;
+    z-index:-1;
+}
+img{
+    width:40rem;
+    animation: bike 5s ease-in-out;
+}
+@keyframes bike{
+    50%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(-300%);
+        
+    }
+}
+@media screen  and (max-width:1200px){
+    .content {
+        width:100%s;
+        text-align:center;
+    }
+    .image{
+        width: 100%;
+        position:absolute;
+        bottom: -3%;
+        display:flex;
+        justify-content: center;
+
+    }
+    img{
+        width:20rem;
+    }
+    
+}
+@media screen  and (max-width:576px){
+    .content {
+        width:100%;
+        text-align:center;
+    }
+    .content h1,h3,p{
+        margin-bottom:5% ;
+        
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        display:flex;
+        
+
+    }
+    img{
+        width:30rem;
+    }
+    
+}
+
+
+    
+
