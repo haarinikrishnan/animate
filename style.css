@@ -90,7 +90,7 @@ img{
     animation: bike 5s ease-in-out;
 }
 @keyframes bike{
-    50%{
+    0%{
         transform: translateX(200%);
     }
     100%{
